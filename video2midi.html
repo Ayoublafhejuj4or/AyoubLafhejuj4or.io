@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Video2MIDI</h1>
+      <p>Convert video audio to MIDI files using AI</p>
+    </div>
+
+    <div class="upload-section">
+      <div class="upload-area" id="uploadArea">
+        <div class="upload-icon">🎵</div>
+        <div class="upload-text">Drag & drop your video file here</div>
+        <div class="upload-text">or</div>
+        <button class="upload-btn" onclick="document.getElementById('fileInput').click()">Choose File</button>
+        <input type="file" id="fileInput" class="file-input" accept="video/*">
+      </div>
+      <div class="video-preview" id="videoPreview">
+        <video id="videoElement" controls></video>
+      </div>
+    </div>
+
+    <div class="controls-section">
+      <div class="control-group">
+        <label for="sensitivity">Audio Sensitivity</label>
+        <input type="range" id="sensitivity" min="1" max="10" value="5">
+      </div>
+      <div class="control-group">
+        <label for="instrument">Instrument Type</label>
+        <select id="instrument">
+          <option value="piano">Piano</option>
+          <option value="guitar">Guitar</option>
+          <option value="violin">Violin</option>
+          <option value="drums">Drums</option>
+          <option value="auto">Auto Detect</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label for="tempo">Tempo Adjustment</label>
+        <input type="range" id="tempo" min="50" max="200" value="120">
+      </div>
+      <button class="convert-btn" id="convertBtn" disabled>Convert to MIDI</button>
+    </div>
+
+    <div class="progress-section" id="progressSection">
+      <div class="spinner"></div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="progress-text" id="progressText">Processing audio...</div>
+    </div>
+
+    <div class="result-section" id="resultSection">
+      <h3>Conversion Complete!</h3>
+      <p>Your MIDI file is ready for download.</p>
+      <a href="#" class="download-btn" id="downloadBtn">Download MIDI File</a>
+    </div>
+
+    <div class="footer">
+      <p>Powered by AI music transcription technology</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Video2MIDI</h1>
+      <p>Convert video audio to MIDI files using AI</p>
+    </div>
+
+    <div class="upload-section">
+      <div class="upload-area" id="uploadArea">
+        <div class="upload-icon">🎵</div>
+        <div class="upload-text">Drag & drop your video file here</div>
+        <div class="upload-text">or</div>
+        <button class="upload-btn" onclick="document.getElementById('fileInput').click()">Choose File</button>
+        <input type="file" id="fileInput" class="file-input" accept="video/*">
+      </div>
+      <div class="video-preview" id="videoPreview">
+        <video id="videoElement" controls></video>
+      </div>
+    </div>
+
+    <div class="controls-section">
+      <div class="control-group">
+        <label for="sensitivity">Audio Sensitivity</label>
+        <input type="range" id="sensitivity" min="1" max="10" value="5">
+      </div>
+      <div class="control-group">
+        <label for="instrument">Instrument Type</label>
+        <select id="instrument">
+          <option value="piano">Piano</option>
+          <option value="guitar">Guitar</option>
+          <option value="violin">Violin</option>
+          <option value="drums">Drums</option>
+          <option value="auto">Auto Detect</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label for="tempo">Tempo Adjustment</label>
+        <input type="range" id="tempo" min="50" max="200" value="120">
+      </div>
+      <button class="convert-btn" id="convertBtn" disabled>Convert to MIDI</button>
+    </div>
+
+    <div class="progress-section" id="progressSection">
+      <div class="spinner"></div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="progress-text" id="progressText">Processing audio...</div>
+    </div>
+
+    <div class="result-section" id="resultSection">
+      <h3>Conversion Complete!</h3>
+      <p>Your MIDI file is ready for download.</p>
+      <a href="#" class="download-btn" id="downloadBtn">Download MIDI File</a>
+    </div>
+
+    <div class="footer">
+      <p>Powered by AI music transcription technology</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
